@@ -4,7 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node scripts/build-assets.mjs",
+    "build": "node scripts/verify-site.mjs",
+    "build:assets": "node scripts/build-assets.mjs",
     "dev": "python3 -m http.server 5173",
     "verify": "node scripts/verify-site.mjs"
   }
