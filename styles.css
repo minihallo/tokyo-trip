@@ -281,23 +281,33 @@ button {
 
 .photo-grid {
   display: grid;
-  gap: 12px;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 18px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   margin: 0 auto;
-  max-width: 1280px;
-  padding: 28px 18px 80px;
+  max-width: 1320px;
+  padding: 36px 24px 88px;
 }
 
 .photo-tile {
-  aspect-ratio: var(--ratio, 4 / 3);
+  aspect-ratio: 4 / 3;
   background: #e6e7e0;
-  border: 0;
-  border-radius: 6px;
+  border: 1px solid rgba(16, 18, 20, 0.08);
+  border-radius: 8px;
+  box-shadow: 0 1px 0 rgba(16, 18, 20, 0.05);
   cursor: zoom-in;
   display: block;
-  min-height: 150px;
   overflow: hidden;
   padding: 0;
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
+}
+
+.photo-tile:hover {
+  border-color: rgba(47, 111, 94, 0.38);
+  box-shadow: 0 16px 34px rgba(16, 18, 20, 0.13);
+  transform: translateY(-2px);
 }
 
 .photo-tile img {
@@ -442,13 +452,9 @@ button {
   }
 
   .photo-grid {
-    gap: 8px;
+    gap: 12px;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    padding: 18px 8px 56px;
-  }
-
-  .photo-tile {
-    min-height: 110px;
+    padding: 18px 12px 64px;
   }
 
   .lightbox {

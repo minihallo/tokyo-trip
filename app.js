@@ -132,7 +132,6 @@ function renderAlbum(album) {
             (photo, photoIndex) => `
               <button
                 class="photo-tile"
-                style="--ratio: ${photo.width} / ${photo.height}"
                 type="button"
                 data-photo-index="${photoIndex}"
                 aria-label="${escapeHtml(photoLabel(album, photo, photoIndex))}"
