@@ -1,0 +1,11 @@
+{
+  "name": "tokyo-trip",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-assets.mjs",
+    "dev": "python3 -m http.server 5173",
+    "verify": "node scripts/verify-site.mjs"
+  }
+}
