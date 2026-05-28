@@ -63,6 +63,30 @@ const ALBUM_CONFIG = {
     title: "아키하바라",
     subtitle: "전광판과 골목의 밀도",
   },
+  "에노시마": {
+    slug: "enoshima",
+    order: 9,
+    title: "에노시마",
+    subtitle: "바다와 섬으로 이어진 오후",
+  },
+  "슬램덩크": {
+    slug: "slam-dunk",
+    order: 10,
+    title: "슬램덩크",
+    subtitle: "철길 건널목 앞의 짧은 정지",
+  },
+  "하세데라 템플": {
+    slug: "hasedera-temple",
+    order: 11,
+    title: "하세데라 템플",
+    subtitle: "언덕 위 사찰과 조용한 정원",
+  },
+  "가마쿠라": {
+    slug: "kamakura",
+    order: 12,
+    title: "가마쿠라",
+    subtitle: "늦은 오후 골목과 거리",
+  },
 };
 
 function runSips(args) {
